@@ -1,0 +1,121 @@
+/* GENERAL BODY STYLING */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fc;
+  color: #1e1e2f;
+}
+
+/* HEADER STYLING */
+header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 10px 0;
+  font-size: 1.15rem;
+}
+
+/* MAIN CONTENT AREA */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* FLEX GRID FOR SECTIONS */
+.toolkit-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+/* SECTION CARD STYLING */
+.toolkit-section {
+  flex: 1 1 calc(50% - 24px);
+  border-radius: 14px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #ffffff, #f2f6fa);
+  border-left: 6px solid #6a11cb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.toolkit-section:nth-child(2) {
+  border-left-color: #ff6b6b;
+}
+.toolkit-section:nth-child(3) {
+  border-left-color: #1dd1a1;
+}
+.toolkit-section:nth-child(4) {
+  border-left-color: #ffa502;
+}
+
+.toolkit-section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.toolkit-section h2 {
+  color: #2f3542;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.toolkit-section p {
+  font-size: 1rem;
+  color: #4b4b63;
+  line-height: 1.6;
+}
+
+/* ACTION BUTTON */
+.button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 22px;
+  background: #6a11cb;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE STACKING */
+@media (max-width: 768px) {
+  .toolkit-section {
+    flex: 1 1 100%;
+  }
+}
+
+/* FOOTER STYLING */
+footer {
+  text-align: center;
+  background: #2d3436;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
